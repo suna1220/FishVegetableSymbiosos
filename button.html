@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>功能</title>
+	<style>
+			#content{
+				float: right;
+				width: 400px;
+				background: #336699;
+			}		
+			#sidebar{
+				float: left;
+				width: 720px;
+				background: #999;
+			}
+			#footer{
+				float: left;
+				width: 1119px;
+				background: #FFFFFF;
+			}
+		</style>
+</head>
+		
+<body>
+		<div style="left: 0px; position: absolute; top: 0px;">
+			<div id= "sidebar">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				</div>
+
+				<div id= "content">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				</div>
+
+				<div style="left: 0px; position: absolute; top: 365px;"align='center' valign="middle">
+				<div id= "footer">
+		    	<font size="5" color="black">
+		        <div id="times"></div>       
+		        <script type="text/javascript">
+		            function getDate()														//抓取現在時間 
+		            {								  
+		                var date = new Date();												//格式化為本地時間
+		                var d = date.getDay();												//抓取現在日期
+		                var dayNames = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");           
+		                var date1 = date.toLocaleString();									//獲取div                
+		                var div1 = document.getElementById("times");						//將時間寫入div    
+		                div1.innerHTML = '目前時間：' + date1 + ' (' + dayNames[d] + ')';	//使用定時器每秒向div寫入現在时间		               
+		   			}
+		            setInterval("getDate()",1000);
+		        </script>
+
+		        <body onload="ShowTime()">
+				</div>
+				</div>
+
+
+		</div>
+				
+
+
+	<div style="left: 805px; position: absolute; top: 30px;">
+		<input type="button" value="編號" style="width:120px;height:40px;font-size:20px;">
+		<input type="button" value="水深水位" style="width:120px;height:40px;font-size:20px;"><p>
+		<input type="button" value="溫度" style="width:120px;height:40px;font-size:20px;">
+		<input type="button" value="溫度" style="width:120px;height:40px;font-size:20px;"><p>
+		<input type="button" value="濕度" style="width:120px;height:40px;font-size:20px;">
+		<input type="button" value="PH值" style="width:120px;height:40px;font-size:20px;"><p>
+		<input type="button" value="電壓" style="width:120px;height:40px;font-size:20px;">
+		<input type="button" value="時間" style="width:120px;height:40px;font-size:20px;"><p>
+		<input type="button" value="即時影像" style="width:244px;height:40px;font-size:20px;">
+	</div>
+</body>
+</html>
